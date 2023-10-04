@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<style>
+	body{
+		margin-left: 60px;
+		font-family: Arial;
+	}
+	a:link {
+		color:black;
+		text-decoration: none;
+	}
+	a:visited {
+		color:black;
+	}
+	a:hover {
+		color:purple;
+	}
+	a:active {
+		color:red;
+	}
+	.title{
+		font-size:80px;
+		margin-top: 100px;
+	}
+	.about{
+		line-height: 20pt;
+		word-spacing: 10px;
+		margin-top: 80px;
+		margin-right:100px;
+		margin-left: 600px;
+		opacity: 0.8;
+	}
+	.z{
+		width: 90%;
+		background-color: floralwhite;
+		border: 20px;
+		border-radius: 30px;
+	}
+	.button{
+		background-color:#4CAF50;
+		border: none;
+  		color: white;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		border-radius: 25px;
+	}
+	input{
+		width: 30%;
+		padding: 12px 20px;
+ 		margin: 8px 0;
+	    box-sizing: border-box;
+	}
+	</style>
+	<link rel="icon" type="image/x-icon" href="logo1.jpg">
+</head>
+<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<div class="nav">
+	<a href="home.html">
+		<img src="logo1.jpg" width="auto" height="50px" style="margin-top: 30px; margin-bottom: 1px;">
+	</a>
+	<center><b><a href="home.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+	<a href="about.html">MORE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="contact.html">CONTACT US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div></center>
+<hr width="100%">
+<div class="image">
+	<img src="https://img.freepik.com/premium-vector/modern-calculator-with-people-great-design-any-purposes_123447-3851.jpg?w=740" align="right" height="400px" 
+	width="auto"> 
+</div>
+<aside class="title">
+	<b>CGPI &nbsp;To <br>Percentage<br> Calculator</b>
+</aside><br>
+<p style="opacity:0.6; word-spacing:8px" >
+Curious about the process of calculating your percentage from CGPA? CGPI to percentage  calculator  to  help  you  calculate your scores accurately., Knowing this conversion process can be helpful for students, parents, and educators alike.Our CGPA to percentage converter can save you time and hassle, making it easier than ever to understand your academic performance. Keep reading to learn more!</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Now Calculate Your CGPI To Percentage Easily Using <a href="home.html"> <i>Theem Calculator</i></a></h1> 
+<div class="image">
+	<img src="https://i.pinimg.com/originals/11/64/91/1164913b4932faae0fe871859b01684b.gif" align="left" height="400px" 
+	width="auto">
+</div>
+<p class="about">Have you ever heard of a tool that instantly gives your percentage against the CGPI score? Theem-Calculator has made this possible. With our new tool you can get your percentage within seconds. You do not have to run for calculators anymore. This unique tool gives you an exact percentage with a click. All you have to do is enter your CGPI and click on calculate. Take advantage of this free time-saving platform created by Theem-Calculator for student's convenience. Know the universities you can apply to with your CGPI score.</p>
+<fieldset class="z">
+<center>
+	<b><h1>Convert CGPI to Percentage</h1></b><br>
+<form method="get">
+	<button onClick="grade4()" class="button">4.0 GRADING SCALE</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button onClick="grade5()" class="button">5.0 GRADING SCALE</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button onClick="grade10()" class="button">10.0 GRADING SCALE</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+	<br><input type="textbox" placeholder="Enter your CGPI" id="usergrade" name="cgpi">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="texboxt" name="ans">
+</form>
+</center>
+	</fieldset>
+<script> 
+	function grade10() {
+		var f = parseInt(document.getElementsByName('cgpi')[0].value);
+        var result = f*9.5;
+        document.getElementsByName('ans')[0].value=result;
+		
+	}
+</script>
+<hr style="color:black;">
+<footer> <text align="left">Copyrights &copy;2023 All rights reserved.<br>
+<a href="">Theem Collage of Engineering.</a></align>
+	</footer>
+	</body>
+</html>
