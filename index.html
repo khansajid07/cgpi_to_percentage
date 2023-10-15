@@ -89,30 +89,65 @@ Curious about the process of calculating your percentage from CGPA? CGPI to perc
 <br>
 <br>
 <h1>Now Calculate Your CGPI To Percentage Easily Using <a href="home.html"> <i>Theem Calculator</i></a></h1> 
+	<fieldset class="z">
+<center>
+	<b><h1>Convert CGPI to Percentage</h1></b><br>
+<form method="get">
+		<button onClick="grade10()" class="button">10.0 GRADING SCALE</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button onClick="grade5()" class="button">5.0 GRADING SCALE</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button onClick="grade4()" class="button">4.0 GRADING SCALE</button><br><br>
+	<br><center><input type="textbox" placeholder="Enter your CGPI" id="usergrade" name="cgpi"></center>
+</form>
+</center>
+	</fieldset>
 <div class="image">
 	<img src="https://i.pinimg.com/originals/11/64/91/1164913b4932faae0fe871859b01684b.gif" align="centre" height="400px" 
 	width="auto">
 </div><br>
 <p class="about">Have you ever heard of a tool that instantly gives your percentage against the CGPI score? Theem-Calculator has made this possible. With our new tool you can get your percentage within seconds. You do not have to run for calculators anymore. This unique tool gives you an exact percentage with a click. All you have to do is enter your CGPI and click on calculate. Take advantage of this free time-saving platform created by Theem-Calculator for student's convenience. Know the universities you can apply to with your CGPI score.</p>
-<fieldset class="z">
-<center>
-	<b><h1>Convert CGPI to Percentage</h1></b><br>
-<form method="get">
-	<center>
-	<button onClick="grade10()" class="button">Calculate your percentage</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" placeholder="Enter your CGPI" id="usergrade" name="cgpi"></center>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	
-</form>
-</center>
-	</fieldset>
+
 <script> 
 	function grade10() {
+
 		var f = parseInt(document.getElementsByName('cgpi')[0].value);
-        var result = f*7.25+11;
-        confirm('Your percentage is '+result+'%');
+		var result;
+		if(f<=10){
 		
-	}
+        result = f*7.25+12;
+        confirm('Your percentage is '+result+'%');
+ 	}
+		else{
+			alert("Please enter valid cgpi that must be between 0-10");
+		}
+	
+    }
+    function grade5() {
+
+		var f = parseInt(document.getElementsByName('cgpi')[0].value);
+		var result;
+		if(f<=5){
+		
+        result = (f-0.5)*10;
+        confirm('Your percentage is '+result+'%');
+ 	}
+		else{
+			alert("Please enter valid cgpi that must be between 0-05");
+		}
+	
+    }function grade4() {
+
+		var f = parseInt(document.getElementsByName('cgpi')[0].value);
+		var result;
+		if(f<=4){
+		
+        result = (f/10)*100;
+        confirm('Your percentage is '+result+'%');
+ 	}
+		else{
+			alert("Please enter valid cgpi that must be between 0-04");
+		}
+	
+    }
 </script>
 <hr style="color:black;">
 <footer> <text align="left">Copyrights &copy;2023 All rights reserved.<br>
