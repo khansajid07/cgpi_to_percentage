@@ -108,49 +108,43 @@ Curious about the process of calculating your percentage from CGPA? CGPI to perc
 </div><br>
 <p class="about">Have you ever heard of a tool that instantly gives your percentage against the CGPI score? Theem-Calculator has made this possible. With our new tool you can get your percentage within seconds. You do not have to run for calculators anymore. This unique tool gives you an exact percentage with a click. All you have to do is enter your CGPI and click on calculate. Take advantage of this free time-saving platform created by Theem-Calculator for student's convenience. Know the universities you can apply to with your CGPI score.</p>
 
-<script> 
-	function grade10() {
+<script>
+		function grade10() {
+			var f = parseFloat(document.getElementById("usergrade").value);
+			var result;
 
-		var f = parseInt(document.getElementsByName('cgpi')[0].value);
-		var result;
-		if(f<=10){
-		
-        result = f*7.1+11;
-        .getElelementbyName('ans')[0].value=result;
- 	}
-		else{
-			alert("Please enter valid cgpi that must be between 0-10");
+			if (f >= 0 && f <= 10) {
+				result = f * 7.1 + 11;
+				document.getElementsByName("ans")[0].value = result;
+			} else {
+				alert("Please enter a valid CGPI that must be between 0-10");
+			}
 		}
-	
-    }
-    function grade5() {
 
-		var f = parseInt(document.getElementsByName('cgpi')[0].value);
-		var result;
-		if(f<=5){
-		
-        result = (f-0.5)*10;
-        .getElelementbyName('ans')[0].value=result;
- 	}
-		else{
-			alert("Please enter valid cgpi that must be between 0-05");
-		}
-	
-    }function grade4() {
+		function grade5() {
+			var f = parseFloat(document.getElementsByName("cgpi")[0].value);
+			var result;
 
-		var f = parseInt(document.getElementsByName('cgpi')[0].value);
-		var result;
-		if(f<=4){
-		
-        result = (f/10)*100;
-        .getElelementbyName('ans')[0].value=result;
- 	}
-		else{
-			alert("Please enter valid cgpi that must be between 0-04");
+			if (f >= 0 && f <= 5) {
+				result = (f - 0.5) * 10;
+				document.getElementsByName("ans")[0].value = result;
+			} else {
+				alert("Please enter a valid CGPI that must be between 0-5");
+			}
 		}
-	
-    }
-</script>
+
+		function grade4() {
+			var f = parseFloat(document.getElementsByName("cgpi")[0].value);
+			var result;
+
+			if (f >= 0 && f <= 4) {
+				result = (f / 10) * 100;
+				document.getElementsByName("ans")[0].value = result;
+			} else {
+				alert("Please enter a valid CGPI that must be between 0-4");
+			}
+		}
+	</script>
 <hr style="color:black;">
 <footer> <text align="left">Copyrights &copy;2023 All rights reserved.<br>
 <a href="">Theem Collage of Engineering.</a></align>
